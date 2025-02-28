@@ -7,80 +7,49 @@
 </head>
 <body>
     <h1>rock paper scissors game</h1>
-    <p>writing js code in the button tag</p>
+    <p>reducing computerMove function into one and make it reuseble</p>
     <button onclick=
     "
-        let randomNumber = Math.random(),
-        computerMove = '',
-        result = '';
-
-        randomNumber > 0 && randomNumber <= 1/3 ? computerMove = 'rock':
-        randomNumber > 1/3 && randomNumber <= 2/3 ? computerMove = 'paper':
-        randomNumber > 2/3 && randomNumber < 1 ? computerMove = 'scissors' : '';
+        let compMove = computerMove();
+        let result = '';   
+        compMove === 'rock' ? result = 'tie' : 
         
-        computerMove === 'rock' ? result = 'tie' : 
-        computerMove === 'paper' ? result = 'you lose':
-        computerMove === 'scissors' ? result = 'you win' : '';
+        compMove === 'paper' ? result = 'you lose':
+        compMove === 'scissors' ? result = 'you win' : '';
 
-        console.log(`you pick rock computer pick ${computerMove}`);
+        console.log(`you pick rock computer pick ${compMove}`);
         console.log(`result ${result}`);
     
     ">rock</button>
     
     <button onclick=
     "
-        let randomNumber = Math.random(),
-        computerMove = '',
-        result = '';
+        let compMove = computerMove();
+        let result = '';   
+        compMove === 'rock' ? result = 'you win' : 
+        compMove === 'paper' ? result = 'tie':
+        compMove === 'scissors' ? result = 'you lose' : '';
 
-        randomNumber > 0 && randomNumber <= 1/3 ? computerMove = 'rock':
-        randomNumber > 1/3 && randomNumber <= 2/3 ? computerMove = 'paper':
-        randomNumber > 2/3 && randomNumber < 1 ? computerMove = 'scissors' : '';
-        
-        computerMove === 'rock' ? result = 'you win' : 
-        computerMove === 'paper' ? result = 'tie':
-        computerMove === 'scissors' ? result = 'you lose' : '';
-
-        console.log(`you pick paper computer pick ${computerMove}`);
+        console.log(`you pick paper computer pick ${compMove}`);
         console.log(`result ${result}`);
     
     ">paper</button>
     
     <button onclick=
     "
-        let randomNumber = Math.random(),
-        computerMove = '',
-        result = '';
+        let compMove = computerMove();
+        let result = '';   
+        compMove === 'rock' ? result = 'you lose' : 
+        compMove === 'paper' ? result = 'you win':
+        compMove === 'scissors' ? result = 'tie' : '';
 
-        randomNumber > 0 && randomNumber <= 1/3 ? computerMove = 'rock':
-        randomNumber > 1/3 && randomNumber <= 2/3 ? computerMove = 'paper':
-        randomNumber > 2/3 && randomNumber < 1 ? computerMove = 'scissors' : '';
-        
-        computerMove === 'rock' ? result = 'you lose' : 
-        computerMove === 'paper' ? result = 'you win':
-        computerMove === 'scissors' ? result = 'tie' : '';
-
-        console.log(`you pick scissors computer pick ${computerMove}`);
+        console.log(`you pick scissors computer pick ${compMove}`);
         console.log(`result ${result}`);
     
     ">scissors</button>
 
-    <script>
-//         let randomNumber = Math.floor(Math.random() * 3 + 1 ),
-//         computerMove = '',
-//         result = '';
-// console.log(randomNumber);
-
-//         randomNumber == 1 ? computerMove = 'rock':
-//         randomNumber == 2 ? computerMove = 'paper':
-//         randomNumber == 3 ? computerMove = 'scissors' : '';
+    
         
-//         computerMove === 'rock' ? result = 'you lose' : 
-//         computerMove === 'paper' ? result = 'you win':
-//         computerMove === 'scissors' ? result = 'tie' : '';
-
-//         console.log(result);
-        
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
