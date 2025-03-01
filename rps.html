@@ -7,47 +7,15 @@
 </head>
 <body>
     <h1>rock paper scissors game</h1>
-    <p>reducing computerMove function into one and make it reuseble</p>
-    <button onclick=
-    "
-        let compMove = computerMove();
-        let result = '';   
-        compMove === 'rock' ? result = 'tie' : 
-        
-        compMove === 'paper' ? result = 'you lose':
-        compMove === 'scissors' ? result = 'you win' : '';
+    <button class="rock" onclick="rockFunction()">rock</button>
+    
+    <button class="paper" onclick="paperFunction()">paper</button>
+    
+    <button class="scissors" onclick="scissorsFunction()">scissors</button><br>
 
-        console.log(`you pick rock computer pick ${compMove}`);
-        console.log(`result ${result}`);
-    
-    ">rock</button>
-    
-    <button onclick=
-    "
-        let compMove = computerMove();
-        let result = '';   
-        compMove === 'rock' ? result = 'you win' : 
-        compMove === 'paper' ? result = 'tie':
-        compMove === 'scissors' ? result = 'you lose' : '';
-
-        console.log(`you pick paper computer pick ${compMove}`);
-        console.log(`result ${result}`);
-    
-    ">paper</button>
-    
-    <button onclick=
-    "
-        let compMove = computerMove();
-        let result = '';   
-        compMove === 'rock' ? result = 'you lose' : 
-        compMove === 'paper' ? result = 'you win':
-        compMove === 'scissors' ? result = 'tie' : '';
-
-        console.log(`you pick scissors computer pick ${compMove}`);
-        console.log(`result ${result}`);
-    
-    ">scissors</button>
-
+    <p class="move"></p>
+    <p class="result"></p>
+    <p class="score"></p>
     
         
     <script src="./script.js"></script>
