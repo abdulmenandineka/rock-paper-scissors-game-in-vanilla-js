@@ -1,0 +1,53 @@
+body{
+    /* background-color: black; */
+    text-align: center;
+    
+}
+
+@keyframes textGlow {
+    0% { color: red; font-size: 20px; }
+    50% { color: blue; font-size: 30px; }
+    100% { color: green; font-size: 20px; }
+}
+
+.game {
+    font-weight: bold;
+    animation: textGlow 5s infinite alternate;
+}
+
+h1{
+    /* background-color: rgb(125, 197, 197); */
+    padding: 20px;
+    color: orange;
+    letter-spacing: 5px;
+    animation: textGlow 4s infinite alternate;
+
+    
+}
+
+
+span{
+    /* color: blue; */
+    font-size: 45px;
+}
+
+
+p{
+    word-spacing: 5px;
+    font-size: 20px;
+}
+
+button,img{
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    margin: 20px;
+    width: 10em;
+    padding: 5px;
+    
+}
+
+img:hover{
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0,0.2);
+    cursor: pointer;
+}

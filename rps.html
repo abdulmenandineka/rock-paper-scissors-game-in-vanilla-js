@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rock paper scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>rock paper scissors game</h1>
-    <button class="rock" onclick="rockFunction()">rock</button>
+    <h1><span>R</span>ock <span>P</span>aper <span>S</span>cissors <span class="game">game</span></h1>
+    <button class="rock" onclick="playGame('rock')"><img src="./images/rock.jpg" alt=""></button>
     
-    <button class="paper" onclick="paperFunction()">paper</button>
+    <button class="paper" onclick="playGame('paper')"><img src="./images/paper.jpg" alt=""></button>
     
-    <button class="scissors" onclick="scissorsFunction()">scissors</button><br>
+    <button class="scissors" onclick="playGame('scissors')"><img src="./images/scissors.jpg" alt=""></button><br>
 
     <p class="move"></p>
     <p class="result"></p>
