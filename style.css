@@ -20,7 +20,7 @@ h1{
     padding: 20px;
     color: orange;
     letter-spacing: 5px;
-    animation: textGlow 4s infinite alternate;
+    animation: textGlow 5s infinite alternate;
 
     
 }
@@ -41,7 +41,7 @@ button,img{
     border-radius: 50%;
     background-color: white;
     border: none;
-    margin: 20px;
+    margin: 40px;
     width: 10em;
     padding: 5px;
     
@@ -50,4 +50,6 @@ button,img{
 img:hover{
     box-shadow: 5px 5px 5px 5px rgb(0, 0, 0,0.2);
     cursor: pointer;
+    width: 140px;
+    transition: 0.5s;
 }
