@@ -53,3 +53,9 @@ img:hover{
     width: 140px;
     transition: 0.5s;
 }
+
+@media (max-width:664px) {
+    button,img{
+        width: 50px;
+    }
+}
